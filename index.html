@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en" class="theme-dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EchoWithin — experiments, tools, & notes</title>
+    <meta name="description" content="EchoWithin — a personal digital lab for experiments, tools, and short notes by a maker who builds for the love of it." />
+    <meta name="author" content="EchoWithin" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="EchoWithin — experiments, tools, & notes" />
+    <meta property="og:description" content="A personal digital lab for experiments, tools, and short notes." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://echowithin.xyz" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+
+    <!-- Favicons (simple SVG data URI) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%2321313f'/><text x='50' y='57' font-size='48' text-anchor='middle' fill='%23ffffff' font-family='Arial'>E</text></svg>">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header class="site-header py-3">
+      <div class="container d-flex justify-content-between align-items-center">
+        <a class="brand d-flex align-items-center" href="/">
+          <div class="brand-mark" aria-hidden="true">E</div>
+          <div class="ms-2">
+            <div class="brand-name">EchoWithin</div>
+            <div class="brand-sub">digital lab</div>
+          </div>
+        </a>
+
+        <div class="d-flex align-items-center">
+          <nav class="me-3 d-none d-md-block">
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#about" class="nav-link">About</a>
+          </nav>
+          <button id="theme-toggle" class="btn btn-ghost" aria-label="Toggle theme">🌙</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="py-5">
+      <section class="container hero py-5">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <h1 class="display-5">A personal space for experiments, ideas, and digital tools<span id="blinker" aria-hidden="true">|</span></h1>
+            <p class="lead text-muted mt-3">I build things not to impress, but to learn — small tools, half-finished experiments, and notes from late-night tinkering.</p>
+            <div class="mt-4">
+              <a class="btn btn-primary me-2" href="#projects">Explore projects</a>
+              <a class="btn btn-outline-light" href="mailto:hello@echowithin.xyz">Get in touch</a>
+            </div>
+          </div>
+          <div class="col-lg-5 d-none d-lg-block">
+            <div class="hero-visual p-4 rounded-3">
+              <pre><code>// a simple note
+// small scripts & odd experiments
+console.log('hello, lab');
+</code></pre>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="container projects py-5">
+        <h2 class="section-title">Projects</h2>
+        <p class="text-muted small">Small experiments and running tools — open and linkable.</p>
+
+        <div id="projects-grid" class="row g-4 mt-3">
+          <!-- Project cards are rendered here by JS for easy extensibility -->
+        </div>
+      </section>
+
+      <section id="about" class="container about py-5">
+        <h2 class="section-title">About / Philosophy</h2>
+        <p class="mt-2">EchoWithin is a personal lab — a place to try ideas, leave notes, and publish small utilities. I prefer clarity, curiosity, and usefulness over polish. If something resonates, take it for a spin — if not, that’s fine too.</p>
+      </section>
+
+      <section id="lab-notes" class="container lab-notes py-4">
+        <h3 class="section-title">Lab Notes</h3>
+        <ul id="notes-list" class="list-unstyled mt-2 small text-muted">
+          <!-- optional notes populated by JS -->
+        </ul>
+      </section>
+
+      <section class="container socials py-4">
+        <h3 class="section-title">Connect</h3>
+        <div class="mt-2 d-flex gap-3">
+          <a class="social-link" href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><!-- GitHub SVG -->
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M12 .5C5.7.5.8 5.4.8 11.7c0 4.8 3.1 8.9 7.4 10.3.5.1.7-.2.7-.5v-1.9C6.6 19.8 5.8 17.8 5.8 17.8c-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1 1.6-.8 1.9-1.3C9.2 14.8 7 14 7 10.7c0-1 .3-1.8.8-2.4-1-.1-2.2-.5-2.2-2.1 0-.5.2-1 .6-1.4 0 0 .5-.2 1.8.6 1.1-.3 2.4-.4 3.6-.4 1.2 0 2.5.1 3.6.4 1.3-.8 1.8-.6 1.8-.6.4.5.6 1 .6 1.4 0 1.6-1.2 2-2.2 2.1.6.6.9 1.5.9 2.4 0 3.3-2.2 4.1-4.3 4.3.3.3.6.7.6 1.4v2.1c0 .3.2.6.7.5 4.3-1.4 7.4-5.5 7.4-10.3C23.2 5.4 18.3.5 12 .5z"/></svg>
+            <span class="visually-hidden">GitHub</span>
+          </a>
+          <a class="social-link" href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">X</a>
+          <a class="social-link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+          <a class="social-link" href="mailto:hello@echowithin.xyz" aria-label="Email">✉️</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer py-4 mt-5">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="small text-muted">&copy; <span id="year"></span> EchoWithin — a small digital lab</div>
+        <div class="small text-muted">Built with care. <a href="#about">Read the philosophy</a></div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
