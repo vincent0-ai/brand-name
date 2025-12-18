@@ -65,6 +65,16 @@ body{
 
 .visually-hidden{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}
 
+/* Dark-theme overrides for readability */
+html.theme-dark .text-muted { color: var(--text) !important; }
+html.theme-dark .projects .card h3,
+html.theme-dark .projects .card .project-meta,
+html.theme-dark .hero .lead,
+html.theme-dark .lab-note,
+html.theme-dark .site-footer,
+html.theme-dark .site-footer .small,
+html.theme-dark .social-link { color: var(--text) !important; }
+
 /* small responsive tweaks */
 @media (max-width:767px){
   .brand-sub{display:none}
