@@ -18,9 +18,9 @@
       note: 'Community-first, lightweight threading.'
     },
     {
-      name: 'Scraper',
-      desc: 'An experimental scraper for public data collections.',
-      href: 'https://scraper.echowithin.xyz',
+      name: 'Scrapper',
+      desc: 'An experimental scrapper for public data collections.',
+      href: 'https://scrapper.echowithin.xyz',
       status: 'paused',
       note: 'Mostly a tinkering tool; use carefully.'
     }
