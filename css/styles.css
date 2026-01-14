@@ -579,7 +579,11 @@ body::before {
 }
 
 .site-footer .small {
-  color: var(--muted);
+  color: var(--text-secondary);
+}
+
+.site-footer .text-muted {
+  color: var(--text-secondary) !important;
 }
 
 .site-footer a {
