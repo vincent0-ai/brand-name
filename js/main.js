@@ -7,36 +7,31 @@
       name: 'Blog',
       desc: 'A public blog for sharing thoughts, ideas and news.',
       href: 'https://blog.echowithin.xyz',
-      status: 'live',
-      note: 'A growing set of short posts and social app.'
+      status: 'live'
     },
     {
       name: 'Discussio',
       desc: 'A small discussion app for group learning and management.',
       href: 'https://discussio.echowithin.xyz',
-      status: 'experimental',
-      note: 'Community-first, lightweight threading.'
+      status: 'experimental'
     },
     {
       name: 'Scrapper',
       desc: 'An experimental scrapper for scrapping gospel lyrics and medium articles.',
       href: 'https://scrapper.echowithin.xyz',
-      status: 'live',
-      note: 'Mostly a tinkering tool; use carefully.'
+      status: 'live'
     },
     {
       name: 'Library',
       desc: 'A curated collection of useful books for personal growth and learning.',
       href: 'https://library.echowithin.xyz',
-      status: 'live',
-      note: 'A curated collection of useful links and resources.'
+      status: 'live'
     },
     {
       name: 'EchoWithin',
       desc: 'A personal homepage and lab for web experiments.',
       href: 'https://echowithin.xyz',
-      status: 'live',
-      note: 'You are here!'
+      status: 'live'
     }
   ];
 
@@ -147,25 +142,6 @@
     },600);
   }
 
-  // attach note button handlers
-  function attachNoteHandlers(){
-    document.addEventListener('click', (e)=>{
-      if(e.target.matches('.btn-note')){
-        const note = e.target.dataset.note || '';
-        // simple ephemeral tooltip
-        const tip = document.createElement('div');
-        tip.className = 'lab-note';
-        tip.textContent = note;
-        document.body.appendChild(tip);
-        const rect = e.target.getBoundingClientRect();
-        tip.style.position = 'absolute';
-        tip.style.left = (rect.left)+'px';
-        tip.style.top = (rect.bottom + 8 + window.scrollY)+'px';
-        setTimeout(()=> tip.remove(), 4000);
-      }
-    });
-  }
-
   // Mobile navigation toggle
   function setupMobileNav(){
     const toggle = document.getElementById('mobile-nav-toggle');
@@ -267,7 +243,6 @@
     renderProjects();
     renderNotes();
     startBlinker();
-    attachNoteHandlers();
     setupMobileNav();
     themeToggle();
     setupReveal();
