@@ -24,7 +24,7 @@ About: Brief, reflective, and non-resume focused — emphasizes curiosity and ex
 ## How to add or update projects
 
 1. Open `js/main.js`.
-2. Edit the `projects` array — each entry has: `name`, `desc`, `href`, `status`, and `note`.
+2. Edit the `projects` array — each entry has: `name`, `desc`, `href`, and `status`.
 
 Example:
 
@@ -33,8 +33,7 @@ Example:
   name: 'New Project',
   desc: 'Short, one-line description.',
   href: 'https://new.echowithin.xyz',
-  status: 'experimental',
-  note: 'Short note that appears on "note" click.'
+  status: 'experimental'
 }
 ```
 
